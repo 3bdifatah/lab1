@@ -19,7 +19,14 @@ def display_sentence(camelcase):
         string+=word
     print(string)
 
+def display_banner():
+    """displays program name in banner"""
+    msg = 'AWESOME camelCaseGenerator PROGRAM'
+    stars = '*' *len(msg)
+    print(f'\n {stars} \n {msg} \n {stars}')
+
 def main():
+    display_banner()
     sentence=get_sentence()
     words=split_sentence(sentence) 
     camelCase=modify(words)
