@@ -1,5 +1,5 @@
 def get_sentence():
-    print('enter sentence: ')
+    print('Enter a sentence to convert to camelCase: ')
     sentence=input()
     return sentence
 
